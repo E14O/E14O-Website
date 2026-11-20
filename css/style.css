@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Jersey 25';
+    src: url('../fonts/jersey-25-latin-400-normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --off-white: #E8EDE5;
+    --dark-green: #17251E;
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark-green);
+}
+
+h1 {
+    font-family: 'Jersey 25', sans-serif;
+    color: var(--off-white);
+    font-size: 60px;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/desktop_image.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        background-image: url('../images/tablet_image.png');
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        background-image: url('../images/mobile_image.png');
+    }
+}
